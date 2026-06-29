@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio - MD. LUTFUR RAHMAN</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- left sidebar -->
+      <aside class="sidebar">
+        <img
+          class="sidebar-photo"
+          src="images/sayem2.jpeg"
+          alt="A photo of MD. Lutfur Rahman"
+        />
+
+        <h1>MD. LUTFUR RAHMAN</h1>
+
+        <span class="sidebar-role">Computer Science Student</span>
+
+        <hr class="sidebar-divider" />
+
+        <ul class="sidebar-info">
+          <li>
+            <img src="images/svgs/twake-mail.svg" alt="Email" />
+            <span>md.lutfur.rahman@g.bracu.ac.bd</span>
+          </li>
+          <li>
+            <img src="images/svgs/google-maps.svg" alt="Location" />
+            <span>Dhaka, Bangladesh</span>
+          </li>
+        </ul>
+
+        <ul class="sidebar-socials">
+          <li>
+            <a
+              href="https://www.linkedin.com/in/lutfur-rahman-sayem/"
+              target="_blank"
+              rel="noopener"
+              aria-label="LinkedIn"
+            >
+              <img src="images/svgs/linkedin.svg" alt="LinkedIn" />
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://github.com/Lut4Sayem"
+              target="_blank"
+              rel="noopener"
+              aria-label="GitHub"
+            >
+              <img src="images/svgs/refined-github.svg" alt="GitHub" />
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.facebook.com/sayem.theWeiredGuy"
+              target="_blank"
+              rel="noopener"
+              aria-label="Facebook"
+            >
+              <img src="images/svgs/facebook.svg" alt="Facebook" />
+            </a>
+          </li>
+        </ul>
+
+        <div class="sidebar-footer">
+          <p>© 2025 Md. Lutfur Rahman</p>
+        </div>
+      </aside>
+
+      <!-- Right content area -->
+      <div class="content-area">
+        <nav>
+          <ul>
+            <li><a href="index.html">About</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="portfolio.html" class="active">Portfolio</a></li>
+            <li><a href="interests.html">Interests</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+
+          <label class="theme-switch">
+            <input type="checkbox" id="theme-toggle" />
+            <span class="slider"></span>
+          </label>
+        </nav>
+
+        <main>
+          <h2>Portfolio</h2>
+
+          <nav class="sub-nav">
+            <ul>
+              <li><a href="#projects" class="active">Projects</a></li>
+              <li><a href="#research">Research</a></li>
+            </ul>
+          </nav>
+
+          <section id="projects">
+            <h3>Projects</h3>
+
+            <div class="project-grid">
+              <div class="project-card">
+                <h4>Gym Management System</h4>
+                <p>
+                  A web-based system built to manage users, memberships,
+                  equipment, and receipts with role-based dashboards for Admin,
+                  Receptionist, Trainer, and Member.
+                </p>
+                <div class="project-tags">
+                  <span>PHP</span>
+                  <span>MySQL</span>
+                  <span>HTML</span>
+                  <span>CSS</span>
+                  <span>JS</span>
+                </div>
+                <a
+                  href="https://github.com/Lut4Sayem/gym_management_system"
+                  target="_blank"
+                  rel="noopener"
+                  >View on GitHub</a
+                >
+              </div>
+
+              <div class="project-card">
+                <h4>CheckInn — Hotel Management System</h4>
+                <p>
+                  A full-stack MERN hotel management system with role-based
+                  access control for admins, staff, and customers following MVC
+                  architecture.
+                </p>
+                <div class="project-tags">
+                  <span>React</span>
+                  <span>Node.js</span>
+                  <span>Express</span>
+                  <span>MongoDB</span>
+                  <span>JWT</span>
+                  <span>Vite</span>
+                </div>
+                <a
+                  href="https://github.com/shimla50/CheckInn-A-Hotel-Management-System"
+                  target="_blank"
+                  rel="noopener"
+                  >View on GitHub</a
+                >
+              </div>
+              <div class="project-card">
+                <h4>
+                  KnowledgeForge AI
+                  <span class="project-status">In Progress</span>
+                </h4>
+                <p>
+                  An AI-powered organizational knowledge platform combining
+                  document management, intelligent search, and enterprise-grade
+                  access control.
+                </p>
+                <div class="project-tags">
+                  <span>Python</span>
+                  <span>AI/ML</span>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section id="research">
+            <h3>Research</h3>
+
+            <div class="research-list">
+              <div class="research-card">
+                <h4>
+                  Machine Learning-Based Classification of Cyber Incident Types
+                  Using Structured Cybersecurity Data
+                </h4>
+                <p>
+                  Classified cyber attack vectors using 7 ML models on
+                  structured incident data from 2021-2025, achieving best
+                  cross-validation Macro F1 of 0.7858 with Random Forest.
+                </p>
+                <span class="research-status completed">Completed</span>
+              </div>
+
+              <div class="research-card">
+                <h4>
+                  Robustness Analysis of Machine Learning Models for IoT Network
+                  Traffic Recognition
+                </h4>
+                <p>
+                  Evaluated robustness of 4 ML classifiers on IoT-23 network
+                  traffic under noise and missing data, finding Random Forest
+                  most resilient with a robustness score of 0.7014.
+                </p>
+                <span class="research-status completed">Completed</span>
+              </div>
+
+              <div class="research-card">
+                <h4>
+                  Characterizing F1 Degradation in ML-Based IoT IDS Using
+                  Class-Conditional Mahalanobis Distance Under Distribution
+                  Shift
+                </h4>
+                <p>
+                  Investigating whether class-conditional Mahalanobis distance
+                  can predict F1 degradation in ML-based IoT intrusion detection
+                  systems under distribution shift.
+                </p>
+                <span class="research-status in-progress">In Progress</span>
+              </div>
+            </div>
+          </section>
+        </main>
+        <footer class="content-footer">
+          <p>
+            Page: <span id="page-location"></span> &nbsp;•&nbsp; Last updated:
+            <span id="last-modified"></span>
+          </p>
+        </footer>
+      </div>
+    </div>
+    <script>
+      document.getElementById("page-location").textContent =
+        window.location.pathname;
+      document.getElementById("last-modified").textContent =
+        document.lastModified;
+
+      const toggle = document.getElementById("theme-toggle");
+
+      if (localStorage.getItem("theme") === "light") {
+        document.body.classList.add("light-mode");
+        toggle.checked = true;
+      }
+
+      toggle.addEventListener("change", () => {
+        document.body.classList.toggle("light-mode");
+        localStorage.setItem("theme", toggle.checked ? "light" : "dark");
+      });
+    </script>
+  </body>
+</html>

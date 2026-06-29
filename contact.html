@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact - MD. LUTFUR RAHMAN</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- left sidebar -->
+      <aside class="sidebar">
+        <img
+          class="sidebar-photo"
+          src="images/sayem2.jpeg"
+          alt="A photo of MD. Lutfur Rahman"
+        />
+
+        <h1>MD. LUTFUR RAHMAN</h1>
+
+        <span class="sidebar-role">Computer Science Student</span>
+
+        <hr class="sidebar-divider" />
+
+        <ul class="sidebar-info">
+          <li>
+            <img src="images/svgs/twake-mail.svg" alt="Email" />
+            <span>md.lutfur.rahman@g.bracu.ac.bd</span>
+          </li>
+          <li>
+            <img src="images/svgs/google-maps.svg" alt="Location" />
+            <span>Dhaka, Bangladesh</span>
+          </li>
+        </ul>
+
+        <ul class="sidebar-socials">
+          <li>
+            <a
+              href="https://www.linkedin.com/in/lutfur-rahman-sayem/"
+              target="_blank"
+              rel="noopener"
+              aria-label="LinkedIn"
+            >
+              <img src="images/svgs/linkedin.svg" alt="LinkedIn" />
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://github.com/Lut4Sayem"
+              target="_blank"
+              rel="noopener"
+              aria-label="GitHub"
+            >
+              <img src="images/svgs/refined-github.svg" alt="GitHub" />
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.facebook.com/sayem.theWeiredGuy"
+              target="_blank"
+              rel="noopener"
+              aria-label="Facebook"
+            >
+              <img src="images/svgs/facebook.svg" alt="Facebook" />
+            </a>
+          </li>
+        </ul>
+
+        <div class="sidebar-footer">
+          <p>© 2025 Md. Lutfur Rahman</p>
+        </div>
+      </aside>
+
+      <!-- Right content area -->
+      <div class="content-area">
+        <nav>
+          <ul>
+            <li><a href="index.html">About</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="interests.html">Interests</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+          </ul>
+
+          <label class="theme-switch">
+            <input type="checkbox" id="theme-toggle" />
+            <span class="slider"></span>
+          </label>
+        </nav>
+        <main>
+          <h2>Contact</h2>
+
+          <section class="contact-map">
+            <h3>Find Me Here</h3>
+            <div class="map-wrapper">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d233668.06396725783!2d90.25487754014735!3d23.780753031632905!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8b087026b81%3A0x8fa563bbdd5904c2!2sDhaka!5e0!3m2!1sen!2sbd!4v1782507040815!5m2!1sen!2sbd"
+                loading="lazy"
+                allowfullscreen
+              >
+              </iframe>
+            </div>
+          </section>
+
+          <section class="contact-form-section">
+            <h3>Send Me a Message</h3>
+
+            <form class="contact-form">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Your name"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="your@email.com"
+                  required
+                />
+              </div>
+
+              <div class="form-group full-width">
+                <label for="subject">Subject</label>
+                <input
+                  type="text"
+                  id="subject"
+                  name="subject"
+                  placeholder="What's this about?"
+                  required
+                />
+              </div>
+
+              <div class="form-group full-width">
+                <label for="message">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="6"
+                  placeholder="Write your message here..."
+                  required
+                ></textarea>
+              </div>
+
+              <button type="submit" class="form-submit">Send Message</button>
+            </form>
+          </section>
+        </main>
+        <footer class="content-footer">
+          <p>
+            Page: <span id="page-location"></span> &nbsp;•&nbsp; Last updated:
+            <span id="last-modified"></span>
+          </p>
+        </footer>
+      </div>
+    </div>
+    <script>
+      document.getElementById("page-location").textContent =
+        window.location.pathname;
+      document.getElementById("last-modified").textContent =
+        document.lastModified;
+
+      const toggle = document.getElementById("theme-toggle");
+
+      if (localStorage.getItem("theme") === "light") {
+        document.body.classList.add("light-mode");
+        toggle.checked = true;
+      }
+
+      toggle.addEventListener("change", () => {
+        document.body.classList.toggle("light-mode");
+        localStorage.setItem("theme", toggle.checked ? "light" : "dark");
+      });
+    </script>
+  </body>
+</html>

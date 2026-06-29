@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resume - MD. LUTFUR RAHMAN</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- left sidebar -->
+      <aside class="sidebar">
+        <img
+          class="sidebar-photo"
+          src="images/sayem2.jpeg"
+          alt="A photo of MD. Lutfur Rahman"
+        />
+
+        <h1>MD. LUTFUR RAHMAN</h1>
+
+        <span class="sidebar-role">Computer Science Student</span>
+
+        <hr class="sidebar-divider" />
+
+        <ul class="sidebar-info">
+          <li>
+            <img src="images/svgs/twake-mail.svg" alt="Email" />
+            <span>md.lutfur.rahman@g.bracu.ac.bd</span>
+          </li>
+          <li>
+            <img src="images/svgs/google-maps.svg" alt="Location" />
+            <span>Dhaka, Bangladesh</span>
+          </li>
+        </ul>
+
+        <ul class="sidebar-socials">
+          <li>
+            <a
+              href="https://www.linkedin.com/in/lutfur-rahman-sayem/"
+              target="_blank"
+              rel="noopener"
+              aria-label="LinkedIn"
+            >
+              <img src="images/svgs/linkedin.svg" alt="LinkedIn" />
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://github.com/Lut4Sayem"
+              target="_blank"
+              rel="noopener"
+              aria-label="GitHub"
+            >
+              <img src="images/svgs/refined-github.svg" alt="GitHub" />
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.facebook.com/sayem.theWeiredGuy"
+              target="_blank"
+              rel="noopener"
+              aria-label="Facebook"
+            >
+              <img src="images/svgs/facebook.svg" alt="Facebook" />
+            </a>
+          </li>
+        </ul>
+
+        <div class="sidebar-footer">
+          <p>© 2025 Md. Lutfur Rahman</p>
+        </div>
+      </aside>
+
+      <!-- Right content area -->
+      <div class="content-area">
+        <nav>
+          <ul>
+            <li><a href="index.html">About</a></li>
+            <li><a href="resume.html" class="active">Resume</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="interests.html">Interests</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+
+          <label class="theme-switch">
+            <input type="checkbox" id="theme-toggle" />
+            <span class="slider"></span>
+          </label>
+        </nav>
+        <main>
+          <h2>Resume</h2>
+
+          <section class="resume-section">
+            <h3>Education</h3>
+
+            <ul class="timeline">
+              <li class="timeline-entry">
+                <div class="timeline-content">
+                  <span class="timeline-year">2023 - 2027</span>
+                  <h4 class="timeline-institution">BRAC University</h4>
+                  <p class="timeline-degree">
+                    Bachelor of Science in Computer Science
+                  </p>
+                </div>
+              </li>
+
+              <li class="timeline-entry">
+                <div class="timeline-content">
+                  <span class="timeline-year">2019 - 2021</span>
+                  <h4 class="timeline-institution">Dhaka College</h4>
+                  <p class="timeline-degree">
+                    Higher Secondary Certificate (Science)
+                  </p>
+                </div>
+              </li>
+
+              <li class="timeline-entry">
+                <div class="timeline-content">
+                  <span class="timeline-year">2012 - 2019</span>
+                  <h4 class="timeline-institution">Comilla Zilla School</h4>
+                  <p class="timeline-degree">
+                    Secondary School Certificate (Science)
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </section>
+
+          <section class="resume-section">
+            <h3>Certifications & Achievements</h3>
+
+            <ul class="cert-list">
+              <li class="cert-item">
+                <div class="cert-card-inner">
+                  <div class="cert-card-front">
+                    <h4>HackerRank Python Basics</h4>
+                    <p>April 2023</p>
+                    <span class="cert-hint">Hover to view</span>
+                  </div>
+                  <div class="cert-card-back">
+                    <img
+                      src="images/HackerRank.png"
+                      alt="HackerRank Python Basics certificate"
+                    />
+                  </div>
+                </div>
+              </li>
+
+              <li class="cert-item">
+                <div class="cert-card-inner">
+                  <div class="cert-card-front">
+                    <h4>CodeChef 2-Star Coder</h4>
+                    <p>Phitron Batch 6, 2025</p>
+                    <span class="cert-hint">Hover to view</span>
+                  </div>
+                  <div class="cert-card-back">
+                    <img
+                      src="images/codechef.png"
+                      alt="CodeChef 2-Star Coder certificate"
+                    />
+                  </div>
+                </div>
+              </li>
+
+              <li class="cert-item">
+                <div class="cert-card-inner">
+                  <div class="cert-card-front">
+                    <h4>Duke of Edinburgh's Award</h4>
+                    <p>Bronze Standard, July 2024</p>
+                    <span class="cert-hint">Hover to view</span>
+                  </div>
+                  <div class="cert-card-back">
+                    <img
+                      src="images/DOE.png"
+                      alt="Duke of Edinburgh Bronze Award certificate"
+                    />
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </section>
+        </main>
+        <footer class="content-footer">
+          <p>
+            Page: <span id="page-location"></span> &nbsp;•&nbsp; Last updated:
+            <span id="last-modified"></span>
+          </p>
+        </footer>
+      </div>
+    </div>
+    <script>
+      document.getElementById("page-location").textContent =
+        window.location.pathname;
+      document.getElementById("last-modified").textContent =
+        document.lastModified;
+
+      const toggle = document.getElementById("theme-toggle");
+
+      if (localStorage.getItem("theme") === "light") {
+        document.body.classList.add("light-mode");
+        toggle.checked = true;
+      }
+
+      toggle.addEventListener("change", () => {
+        document.body.classList.toggle("light-mode");
+        localStorage.setItem("theme", toggle.checked ? "light" : "dark");
+      });
+    </script>
+  </body>
+</html>
