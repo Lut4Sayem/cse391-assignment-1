@@ -111,7 +111,7 @@
           <section class="contact-form-section">
             <h3>Send Me a Message</h3>
 
-            <form class="contact-form">
+            <form class="contact-form" id="contact-form">
               <div class="form-group">
                 <label for="name">Name</label>
                 <input
@@ -168,12 +168,16 @@
         </footer>
       </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
     <script>
+      // Footer metadata
       document.getElementById("page-location").textContent =
         window.location.pathname;
       document.getElementById("last-modified").textContent =
         document.lastModified;
 
+      // Theme toggle
       const toggle = document.getElementById("theme-toggle");
 
       if (localStorage.getItem("theme") === "light") {
@@ -184,6 +188,26 @@
       toggle.addEventListener("change", () => {
         document.body.classList.toggle("light-mode");
         localStorage.setItem("theme", toggle.checked ? "light" : "dark");
+      });
+
+      // ✅ Initialize EmailJS
+      emailjs.init("DFsAqwB8-vUhWuV8i");
+
+      const form = document.getElementById("contact-form");
+
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        emailjs
+          .sendForm("service_ap38crx", "template_7v5b98f", this)
+          .then(() => {
+            alert("✅ Message sent successfully!");
+            form.reset();
+          })
+          .catch((error) => {
+            alert("❌ Failed to send message. Please try again.");
+            console.error("EmailJS Error:", error);
+          });
       });
     </script>
   </body>
