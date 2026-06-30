@@ -1086,3 +1086,160 @@ body.light-mode .slider {
     align-items: center;
     margin-bottom: 40px;
 }
+
+/* ===============================
+   TABLET & MOBILE
+=================================*/
+
+@media (max-width: 992px) {
+
+  .wrapper {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .sidebar {
+    width: 100%;
+    position: relative;
+    top: 0;
+    min-height: auto;
+    margin-bottom: 20px;
+  }
+
+  .content-area {
+    width: 100%;
+    padding: 30px 20px;
+  }
+
+}
+
+
+/* ===============================
+   MOBILE (≤ 768px)
+=================================*/
+
+@media (max-width: 768px) {
+
+  /* ===== Sidebar ===== */
+  .sidebar {
+    padding: 40px 25px;
+  }
+
+  .sidebar-photo {
+    width: 140px;
+    height: 140px;
+  }
+
+  .sidebar-socials {
+    margin-top: 20px;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .sidebar-footer {
+    display: none;
+  }
+
+  /* ===== Timeline ===== */
+  .timeline-entry {
+    padding-left: 20px;
+  }
+
+  .timeline-entry::before {
+    left: -2px;
+  }
+
+  .timeline-entry::after {
+    left: 4px;
+  }
+
+  /* ===== Layout ===== */
+  main {
+    width: 100%;
+  }
+
+  /* ===== Navigation ===== */
+  .content-area nav {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .content-area nav ul {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  /* ===== Grids ===== */
+  .work-grid,
+  .project-grid,
+  .hobby-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* ===== Contact Form ===== */
+  .contact-form {
+    grid-template-columns: 1fr;
+  }
+
+  /* ===== About Section ===== */
+  .about p {
+    line-height: 1.8;
+    margin-bottom: 18px;
+  }
+
+  /* ===== Certifications (No Flip on Mobile) ===== */
+  .cert-list {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .cert-item {
+    width: 100%;
+    height: auto;
+    perspective: none;
+  }
+
+  .cert-card-inner {
+    transform: none !important;
+    transform-style: flat;
+    height: auto;
+  }
+
+  .cert-card-front,
+  .cert-card-back {
+    position: relative;
+    backface-visibility: visible;
+    height: auto;
+  }
+
+  .cert-card-back {
+    display: none;
+  }
+
+  .cert-hint {
+    display: none;
+  }
+
+  body {
+        overflow-x: hidden;
+    }
+
+}
+
+
+/* ===============================
+   SMALL DEVICES (≤ 576px)
+=================================*/
+
+@media (max-width: 576px) {
+
+  .wrapper {
+    padding: 15px;
+  }
+
+  .content-area {
+    padding: 20px 15px;
+  }
+
+}
